@@ -1,9 +1,9 @@
 # layerzero_merkly_sybil
 The repository is used to verify malicious use of merkly, launch layerzero's witch attack, and partially verify witch addresses  
   
-1.The analysis covers most of the **major EVM chains**: Ethereum, Arbitrum, Optimism, Base, Polygon, Zksync, Linea, Scorll, blast, Mode, Avax, Bnb, Moonbeam, Opbnb, Moonriver;  
+##1.The analysis covers most of the **major EVM chains**: Ethereum, Arbitrum, Optimism, Base, Polygon, Zksync, Linea, Scorll, blast, Mode, Avax, Bnb, Moonbeam, Opbnb, Moonriver;  
   
-2.The analysis determines address witches by:  
+##2.The analysis determines address witches by:  
     &nbsp;&nbsp;1.Used merkly;  
     &nbsp;&nbsp;2.The **total tx** number of wallet addresses in these chains;  
     &nbsp;&nbsp;3.The **total gas balance** of the wallet address in these chains;  
@@ -11,7 +11,7 @@ The repository is used to verify malicious use of merkly, launch layerzero's wit
     &nbsp;&nbsp;5.How many **chains are used** in the wallet address;  
     &nbsp;&nbsp;6.Whether the last transaction and the first transaction of the wallet address are more than **3 months ago** or whether they have been used more than **21 days**.  
       
-3.Specific decision Decision address witch rules:  
+##3.Specific decision Decision address witch rules:  
     &nbsp;&nbsp;1. First of all, due to conditions, we can only scan **polygon blocks in merkly** to obtain potential addresses;  
     &nbsp;&nbsp;2. Then use getAddressAge to obtain whether the initial creation date of the user address is **>1 year**;  
     &nbsp;&nbsp;3, if the user's date **<=1 year**, the total tx of the user in these **chains <200 and the chain used <=2**, and then determine the user's **total balance gas<10** is a potential witch;   
