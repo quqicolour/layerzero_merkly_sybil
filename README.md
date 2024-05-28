@@ -4,12 +4,12 @@ The repository is used to verify malicious use of merkly, launch layerzero's wit
 1、The analysis covers most of the major EVM chains: Ethereum, Arbitrum, Optimism, Base, Polygon, Zksync, Linea, Scorll, blast, Mode, Avax, Bnb, Moonbeam, Opbnb, Moonriver;  
   
 2、The analysis determines address witches by:  
-    1. Used merkly;  
-    2. the total tx number of wallet addresses in these chains;  
-    3. The total gas balance of the wallet address in these chains;  
-    4. The creation age of the wallet address;  
-    5. How many chains are used in the wallet address;  
-    6. Whether the last transaction and the first transaction of the wallet address are more than 3 months ago or whether they have been used more than 21 times.  
+    >*Used merkly;  
+    >*The total tx number of wallet addresses in these chains;  
+    >*The total gas balance of the wallet address in these chains;  
+    >*The creation age of the wallet address;  
+    >*How many chains are used in the wallet address;  
+    >*Whether the last transaction and the first transaction of the wallet address are more than 3 months ago or whether they have been used more than 21 times.  
       
 3、Specific decision Decision address witch rules:  
     1. First of all, due to conditions, we can only scan polygon blocks in merkly to obtain potential addresses;  
