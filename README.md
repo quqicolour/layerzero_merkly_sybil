@@ -5,7 +5,6 @@ The repository is used to verify malicious use of merkly, launch layerzero's wit
 A total of 15 chains, mainly Polygon analysis,Ethereum, Arbitrum, Optimism, Base, Polygon, Zksync, Linea, Scorll, blast, Mode, Avax, Bnb, Moonbeam, Opbnb, Moonriver;  
   
 ## 2.The analysis determines address witches by:  
-
     1.Used merkly;  
     2.The total tx number of wallet addresses in these chains;  
     3.The total gas balance of the wallet address in these chains;  
@@ -25,7 +24,8 @@ A total of 15 chains, mainly Polygon analysis,Ethereum, Arbitrum, Optimism, Base
     7. Run getUserActiveDays to obtain the active days of polygon's address.  
     8. When the last transaction of the potential witch address read is <=3 months away from the first transaction or the active days in polygon are <=21 days, then it is screened  
     whether it is one of the more than 80 w addresses published by layerzero, and determines whether the addresses are repeated, and finally generates the witch list sybilData.csv
-## 4.  Code execution verification:
+    
+## 4.  Code execution verification:  
   1.To download node.js locally, download the following dependencies:  
 "@covalenthq/client-sdk": "^1.0.2",  
 axios: "^1.6.8",  
