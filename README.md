@@ -4,7 +4,7 @@ The repository is used to verify malicious use of merkly, launch layerzero's wit
 1.The analysis covers most of the **major EVM chains**: Ethereum, Arbitrum, Optimism, Base, Polygon, Zksync, Linea, Scorll, blast, Mode, Avax, Bnb, Moonbeam, Opbnb, Moonriver;  
   
 2.The analysis determines address witches by:  
-    * Used merkly;  
+    &nbsp;&nbsp;Used merkly;  
     * The **total tx** number of wallet addresses in these chains;  
     The **total gas balance** of the wallet address in these chains;  
     The **creation age** of the wallet address;  
